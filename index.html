@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Form Đóng Góp Ý Kiến</title>
+  <style>
+    :root { color-scheme: light; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #f6f7fb;
+      color: #111;
+    }
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 18px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,.06);
+      overflow: hidden;
+    }
+    header {
+      padding: 16px 18px;
+      border-bottom: 1px solid #eee;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.3;
+    }
+    header p {
+      margin: 6px 0 0;
+      font-size: 13px;
+      color: #555;
+    }
+
+    /* Responsive iframe */
+    .frame {
+      width: 100%;
+      height: 85vh;          /* tự co theo màn hình */
+      min-height: 720px;     /* đảm bảo đủ cao */
+      border: 0;
+      display: block;
+    }
+
+    .footer {
+      font-size: 12px;
+      color: #666;
+      padding: 12px 18px 16px;
+      border-top: 1px solid #eee;
+    }
+    a { color: inherit; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <h1>📩 Form Đóng Góp Ý Kiến</h1>
+        <p>Vui lòng điền nội dung góp ý bên dưới. Form không yêu cầu hiển thị email.</p>
+      </header>
+
+      <iframe
+        class="frame"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSdH_sVp4ONA7mYomwrAEOQf2nKct4zkzoLqe9JEfxcSdYoAYg/viewform?embedded=true"
+        title="Google Form"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen>
+        Đang tải…
+      </iframe>
+
+      <div class="footer">
+        Nếu form không hiển thị, mở trực tiếp tại:
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdH_sVp4ONA7mYomwrAEOQf2nKct4zkzoLqe9JEfxcSdYoAYg/viewform" target="_blank" rel="noopener noreferrer">
+          Link Google Form
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
